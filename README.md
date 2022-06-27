@@ -91,7 +91,7 @@ Initial Plan page 1.                                 | Initial Plan page 2
 ### Validator testing
 Validator testing!
 ### Other testing done
-- Continual testing done through the modified TDD method described in "The Clean Coder- A Code of Conduct for Professional Programmers" by Robert C. Martin and Hello Django lessons.
+- Continual testing done through the ------ method described in "The Clean Coder- A Code of Conduct for Professional Programmers" by Robert C. Martin and Hello Django lessons.
 ![TDD Testing example](Image goes here)
 ## Bugs
 ### Bugs through the creation process
