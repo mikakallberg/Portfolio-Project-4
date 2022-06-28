@@ -1,5 +1,5 @@
 """
-WSGI config for THE_GREEN_THUMB project.
+WSGI config for the_green_thumb project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'THE_GREEN_THUMB.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'the_green_thumb.settings')
 
 application = get_wsgi_application()

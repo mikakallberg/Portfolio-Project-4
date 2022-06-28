@@ -1,4 +1,4 @@
-"""THE_GREEN_THUMB URL Configuration
+"""the_green_thumb Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.2/topics/http/urls/

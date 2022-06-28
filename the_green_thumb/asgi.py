@@ -1,5 +1,5 @@
 """
-ASGI config for THE_GREEN_THUMB project.
+ASGI config for the_green_thumb project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'THE_GREEN_THUMB.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'the_green_thumb.settings')
 
 application = get_asgi_application()

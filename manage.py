@@ -6,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'THE_GREEN_THUMB.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'the_green_thumb.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
