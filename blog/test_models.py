@@ -1,8 +1,16 @@
+""""
+Testing code functionality in models.py
+"""
+import unittest
 from django.test import TestCase
+from .models import BlogPost
 
 
-
-class TestModels(TestCase):
+class TestModels(unittest.TestCase):
+    """"
+    Testing class BlogPost
+    """
 
     def test_post(self):
-        assert 1 == 2
+        post = BlogPost.objects.create(name='Test Todo Post')
+        self.assertEqual(str(post), 'Test Todo Post')

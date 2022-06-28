@@ -1,1 +1,1 @@
-web: gunicorn THE_GREEN_THUMB.wsgi
+web: gunicorn the_green_thumb.wsgi
