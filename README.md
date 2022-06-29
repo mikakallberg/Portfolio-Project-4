@@ -92,6 +92,7 @@ Initial Plan page 1.                                 | Initial Plan page 2
 Validator testing!
 ### Manual Testing
 - Ensured successfull launch of app in Heroku after name change of Project folder.
+- Ensured continued successfull deployement to Heroku following bug in models.py author attribute.
 ### Automated Testing
 - Continual testing done through the ------ method described in "The Clean Coder- A Code of Conduct for Professional Programmers" by Robert C. Martin and Hello Django lessons.
 ![TDD Testing example](Image goes here)
@@ -100,6 +101,7 @@ Validator testing!
 - First bug was connected to trying to gifure out how to write automated tests. It took a lot of research and getting advice from programmers more advanced then me. But in the end I managed to create my very first succesfull automatic test. 
 ![Bug 1](static/assets/images/bug_nr_one.png)
 - Major bug in models.py file when trying to migrate the database. Error message asked to change something in author attribute, but that didn't resolve issue. Had to reset database using the guide from [Delfstack](https://www.delftstack.com/howto/django/django-reset-database/).
+
  
  - 
     - 
