@@ -1,16 +1,19 @@
 """"
 Testing code functionality in models.py
 """
-import unittest
 from django.test import TestCase
 from .models import BlogPost
 
 
-class TestModels(unittest.TestCase):
+class TestModels(TestCase):
     """"
     Testing class BlogPost
     """
+    def setUp(self):
+        # Setup run before every test method.
+        pass
 
-    def test_post(self):
-        post = BlogPost.objects.create(name='Test Todo Post')
-        self.assertEqual(str(post), 'Test Todo Post')
+    def test_BlogPost_title_length(self):
+        blogpost = BlogPost.objects.create(title='Test Todo Title')
+        self.assertEqual(str(blogpost), 'Test Todo Title')
+
