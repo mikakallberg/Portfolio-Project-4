@@ -97,8 +97,8 @@ Validator testing!
 ![TDD Testing example](Image goes here)
 ## Bugs
 ### Bugs through the creation process
-- 
-
+- First bug was connected to trying to gifure out how to write automated tests. It took a lot of research and getting advice from programmers more advanced then me. But in the end I managed to create my very first succesfull automatic test. 
+![Bug 1](static/assets/images/bug_nr_one.png)
 - 
  
  - 
