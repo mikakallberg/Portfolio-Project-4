@@ -15,5 +15,8 @@ class TestModels(TestCase):
 
     def test_BlogPost_title_characters(self):
         """ Testing if characters inserted in title is a string """
-        blogpost = BlogPost.objects.create(title='Test Todo Title')
+        blogpost = BlogPost.objects.create(
+            title='Test Todo Title',
+            
+            )
         self.assertEqual(str(blogpost), 'Test Todo Title')
