@@ -24,7 +24,7 @@ class BlogPost(models.Model):
     blog_content = models.TextField(default='Start your story here')
     status = models.IntegerField(choices=STATUS, default=0)
     featured_image = CloudinaryField('image', default='placeholder')
-    excerpt = models.TextField()
+    excerpt = models.TextField('An excerpt from the blogpost')
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
 
