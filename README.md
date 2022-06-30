@@ -69,7 +69,7 @@ Initial Plan page 1.                                 | Initial Plan page 2
 
 
 ### Features left to implement
-- 
+- Open up possibility for more content creators, and with that being able to search for thier contributions via user_email, as well as title and/or content of post.
 
 
 # Technologies and Libraries used
@@ -94,6 +94,7 @@ Validator testing!
 - Ensured successfull launch of app in Heroku after name change of Project folder.
 - Ensured continued successfull deployement to Heroku following bug in models.py author attribute.
 - Ensured functionality, creation and edititing, of posting a blog entry, in admin view, and use of summernote applications.
+- Ensured fucntionality of admin.py/PostAdmin/prepopulated_fields, and ensured publishing successfully.
 ### Automated Testing
 - Continual testing done through the ------ method described in "The Clean Coder- A Code of Conduct for Professional Programmers" by Robert C. Martin and Hello Django lessons.
 ![TDD Testing example](Image goes here)
