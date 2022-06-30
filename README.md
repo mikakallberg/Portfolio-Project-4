@@ -93,6 +93,7 @@ Validator testing!
 ### Manual Testing
 - Ensured successfull launch of app in Heroku after name change of Project folder.
 - Ensured continued successfull deployement to Heroku following bug in models.py author attribute.
+- Ensured functionality, creation and edititing, of posting a blog entry, in admin view, and use of summernote applications.
 ### Automated Testing
 - Continual testing done through the ------ method described in "The Clean Coder- A Code of Conduct for Professional Programmers" by Robert C. Martin and Hello Django lessons.
 ![TDD Testing example](Image goes here)
