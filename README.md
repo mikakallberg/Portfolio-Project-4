@@ -101,8 +101,8 @@ Validator testing!
 - First bug was connected to trying to gifure out how to write automated tests. It took a lot of research and getting advice from programmers more advanced then me. But in the end I managed to create my very first succesfull automatic test. 
 ![Bug 1](static/assets/images/bug_nr_one.png)
 - Major bug in models.py file when trying to migrate the database. Error message asked to change something in author attribute, but that didn't resolve issue. Had to reset database using the guide from [Delfstack](https://www.delftstack.com/howto/django/django-reset-database/).
-
- 
+- Bug in models.py/excerpt before migrating nedded a default or blank=True.
+- Bug in admin.py/@admin.register(BlogPost) automated adding of brackets, could not migrate before removed.
  - 
     - 
     - 
