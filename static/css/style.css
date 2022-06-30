@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: f3e6dc;
+    /*background-image: image-url;*/
+}
+
+html, body{
+    height: 100%;
+}
+
+/*credit to  https://djangocentral.com/building-a-blog-application-with-django/  for sidebar widget */
+.card{
+    box-shadow: 0 16px 48px #E3E7EB;
+}
