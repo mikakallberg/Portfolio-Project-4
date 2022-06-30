@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
 # Keep drafts and published posts separated
-STATUS = ((0, 'Draft'), (1, 'Publish'))
+STATUS = ((0, 'Draft'), (1, 'Published'))
 
 
 class BlogPost(models.Model):
