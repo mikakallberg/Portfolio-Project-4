@@ -128,6 +128,7 @@ The project is not deployed
 # Credits
 
 ## Thank you
+- [Spencer Barriball](https://github.com/5pence) for always being there and being a fantastic mentor.
 - [Daisy McGirr](https://github.com/Daisy-McG) for helping me and giving me insights into backend cooperation with frontend.
 
 ### Content
