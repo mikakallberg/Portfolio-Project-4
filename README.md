@@ -105,8 +105,9 @@ Validator testing!
 - Major bug in models.py file when trying to migrate the database. Error message asked to change something in author attribute, but that didn't resolve issue. Had to reset database using the guide from [Delfstack](https://www.delftstack.com/howto/django/django-reset-database/).
 - Bug in models.py/excerpt before migrating nedded a default or blank=True.
 - Bug in admin.py/@admin.register(BlogPost) automated adding of brackets, could not migrate before removed.
- - 
-    - 
+- Bug where index.html didn't render in view. Bugfix add "context_object_name = 'post_list'" to PostList class, system was asked to query from backend, but not what to query. Established bridge to published blogpost through name in for loop on line 10 in index.html.
+- Inability to render post_detail.html, misspelling in if-statement attribute on line 24, reported in error statement. Bugfix, correct spelling misstake.
+ 
     - 
     - 
 
@@ -125,6 +126,9 @@ The project is not deployed
 ![Checklist](image-link here)
 
 # Credits
+
+## Thank you
+- [Daisy McGirr](https://github.com/Daisy-McG) for helping me and giving me insights into backend cooperation with frontend.
 
 ### Content
 - 
