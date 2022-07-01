@@ -107,7 +107,8 @@ Validator testing!
 - Bug in admin.py/@admin.register(BlogPost) automated adding of brackets, could not migrate before removed.
 - Bug where index.html didn't render in view. Bugfix add "context_object_name = 'post_list'" to PostList class, system was asked to query from backend, but not what to query. Established bridge to published blogpost through name in for loop on line 10 in index.html.
 - Inability to render post_detail.html, misspelling in if-statement attribute on line 24, reported in error statement. Bugfix, correct spelling misstake.
- 
+- Inconsistent migration history, resolved by resetting both the SQLite3 amd postgreSQL databases.
+
     - 
     - 
 
