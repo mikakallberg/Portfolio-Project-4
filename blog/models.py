@@ -21,7 +21,7 @@ class BlogPost(models.Model):
         default=id(0))
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
-    blog_content = models.TextField(default='Start your story here')
+    content = models.TextField(blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)
