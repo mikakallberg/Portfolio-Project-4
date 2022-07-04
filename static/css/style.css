@@ -85,13 +85,12 @@ a{
     background: #c4302b;
 }
 
-/*This code is ust temporary to get my project running*/
 .brand {
-    /*font-family: 'Playfair Display', serif;*/
     font-size: 1.4rem;
     font-weight: 700;
-    /*color: #2b1b08;*/
 }
+
+/*This code is ust temporary to get my project running*/
 
 .red-o {
     color: #E84610;
