@@ -7,7 +7,11 @@
 
 body{
     background-color: #f3e6dc;
-    /*background-image: image-url;*/
+    background-image: url('https://res.cloudinary.com/mikakallberg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1656959952/dirt_sun_tndbjc.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
 }
 
 html, body{
