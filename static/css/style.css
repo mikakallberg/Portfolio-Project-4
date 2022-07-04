@@ -14,17 +14,38 @@ html, body{
     height: 100%;
 }
 
-/*credit to  https://djangocentral.com/building-a-blog-application-with-django/  for sidebar widget */
+h1, h2, h3, h4, h5{
+    font-family: 'Playfair Display', serif;
+    color: #2b1b08;
+}
+
+p{
+    font-family: 'Gentium Book Plus', sans-serif;
+}
+
 .card{
-    box-shadow: 0 16px 48px #E3E7EB;
+    border: none;
+    background-color: #d3ded3;
+    box-shadow: 0 16px 48px #f0f4f0;
+}
+
+/*credit to  https://djangocentral.com/building-a-blog-application-with-django/  for sidebar widget */
+.sidebar{
+    clear: right;
+}
+
+.nav-css-settings, .footer-css-settings{
+    background-color: #e3e1dd;
+    font-family: 'Playfair Display', serif;
+    color: #2b1b08;
 }
 
 /*This code is ust temporary to get my project running*/
 .brand {
-    font-family: 'Playfair Display', serif;
+    /*font-family: 'Playfair Display', serif;*/
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    /*color: #2b1b08;*/
 }
 
 .red-o {
@@ -43,35 +64,22 @@ html, body{
     background-color: #445261;
 }
 
-.main-bg {
-    background-color: #F9FAFC;
-}
-
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.sidebar{
-    clear: right;
-}
-
 .image-container {
     position: relative;
 }
 
 .image-flash {
     position: absolute;
-    bottom: 5%;
+    bottom: 0;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: transparent;
 }
 
 .author {
     color: white;
     margin: 4px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .masthead {
