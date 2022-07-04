@@ -84,8 +84,8 @@ Initial Plan page 1.                                 | Initial Plan page 2
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 
 ### APIs
-- 
-- 
+- https://pypi.org/project/django-copyright/
+- https://pypi.org/project/reportlab/
 
 # Testing
 ### Validator testing
@@ -94,7 +94,11 @@ Validator testing!
 - Ensured successfull launch of app in Heroku after name change of Project folder.
 - Ensured continued successfull deployement to Heroku following bug in models.py author attribute.
 - Ensured functionality, creation and edititing, of posting a blog entry, in admin view, and use of summernote applications.
-- Ensured fucntionality of admin.py/PostAdmin/prepopulated_fields, and ensured publishing successfully.
+- Ensured functionality of admin.py/PostAdmin/prepopulated_fields, and ensured publishing successfully.
+- Ensured functionality of login, commenting and like for user.
+- Ensured functionality of alert messages, when commenting, login, logout.
+- Ensured functionality of copyright.
+
 ### Automated Testing
 - Continual testing done through the ------ method described in "The Clean Coder- A Code of Conduct for Professional Programmers" by Robert C. Martin and Hello Django lessons.
 ![TDD Testing example](Image goes here)

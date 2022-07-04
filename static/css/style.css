@@ -23,6 +23,11 @@ p{
     font-family: 'Gentium Book Plus', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .card{
     border: none;
     background-color: #d3ded3;
@@ -38,6 +43,42 @@ p{
     background-color: #e3e1dd;
     font-family: 'Playfair Display', serif;
     color: #2b1b08;
+}
+
+.social{
+    text-align: center;
+    margin: 1rem;
+}
+
+.social-links a i{
+    height: 26px;
+    width: 26px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 3px;
+    text-align: center;
+    color: #fbfcfb;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-link-facebook{
+    background: #3b5998;
+}
+
+.social-link-twitter{
+    background: #1DA1F2;
+}
+
+.social-link-instagram{
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.social-link-youtube{
+    background: #c4302b;
 }
 
 /*This code is ust temporary to get my project running*/
