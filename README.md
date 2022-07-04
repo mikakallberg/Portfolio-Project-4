@@ -110,8 +110,6 @@ Validator testing!
 - Inconsistent migration history, resolved by resetting both the SQLite3 amd postgreSQL databases.
 - Blog content and excerp did not appear. Coder forgot to properly add content and excerpt, solved by adding content and excerp. (Yes, coder laughed)
 
-    - 
-    - 
 
 ### Unfixed bugs
 - 
