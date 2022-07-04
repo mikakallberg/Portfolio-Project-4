@@ -112,7 +112,7 @@ Validator testing!
 - Bug where index.html didn't render in view. Bugfix add "context_object_name = 'post_list'" to PostList class, system was asked to query from backend, but not what to query. Established bridge to published blogpost through name in for loop on line 10 in index.html.
 - Inability to render post_detail.html, misspelling in if-statement attribute on line 24, reported in error statement. Bugfix, correct spelling misstake.
 - Inconsistent migration history, resolved by resetting both the SQLite3 amd postgreSQL databases.
-- Blog content and excerp did not appear. Coder forgot to properly add content and excerpt, solved by adding content and excerp. (Yes, coder laughed)
+- Blog content and excerpt did not appear. Coder forgot to properly add content and excerpt, solved by adding content and excerpt. (Yes, coder and tutor support agent laughed)
 
 
 ### Unfixed bugs
@@ -134,13 +134,15 @@ The project is not deployed
 ## Thank you
 - [Spencer Barriball](https://github.com/5pence) for always being there and being a fantastic mentor.
 - [Daisy McGirr](https://github.com/Daisy-McG) for helping me and giving me insights into backend cooperation with frontend.
+- [Bim Williams](https://github.com/MrBim) for being a good person to talk, and for supplying link to API to render content into a downloadable PDF.
 
 ### Content
-- 
+- This project is modelled and followed using the "I Think Therefore I Blog" [walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/), produced by Matt Rudge at Code Institute. Using this allowed me to focus on understanding the concepts instead of inventing the wheel with every line of code I produce.
+- Another source used in this project is [Djanogcentral](https://djangocentral.com/building-a-blog-application-with-django/). Wherever code from this walkthrough is used, there is credit given in that file.
 
 ### Media
-- For how to make the nav-bar https://github.com/artkonekt/menu/blob/master/README.md was used.
-- As template for README https://github.com/mikakallberg/readme-template/blob/master/README.md was used
+- For how to make the README nav-bar https://github.com/artkonekt/menu/blob/master/README.md was used.
+- As template for README https://github.com/mikakallberg/readme-template/blob/master/README.md was used.
 - 
 
 - 
