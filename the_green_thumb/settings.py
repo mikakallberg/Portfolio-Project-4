@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'django_summernote',
     'crispy_forms',
+    'copyright',
     'blog',
 ]
 
@@ -163,6 +164,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+COPY_START_YEAR = 2022
 
 
 # Static files (CSS, JavaScript, Images)
