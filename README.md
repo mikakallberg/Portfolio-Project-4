@@ -114,6 +114,7 @@ Validator testing!
 - Inability to render post_detail.html, misspelling in if-statement attribute on line 24, reported in error statement. Bugfix, correct spelling misstake.
 - Inconsistent migration history, resolved by resetting both the SQLite3 amd postgreSQL databases.
 - Blog content and excerpt did not appear. Coder forgot to properly add content and excerpt, solved by adding content and excerpt. (Yes, coder and tutor support agent laughed)
+- When adding a create_post.html, page doesn't render, gives an error 404 page. Solution change places of the paths in url_patterns in urls.py.
 
 
 ### Unfixed bugs
