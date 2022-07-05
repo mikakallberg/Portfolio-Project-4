@@ -98,6 +98,7 @@ Validator testing!
 - Ensured functionality of login, commenting and like for user.
 - Ensured functionality of alert messages, when commenting, login, logout.
 - Ensured functionality of copyright.
+- After fixing CSS style for sign in and signup pages, made sure logout page looked good.
 
 ### Automated Testing
 - Continual testing done through the ------ method described in "The Clean Coder- A Code of Conduct for Professional Programmers" by Robert C. Martin and Hello Django lessons.
