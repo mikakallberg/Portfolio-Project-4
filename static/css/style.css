@@ -27,9 +27,22 @@ p{
     font-family: 'Gentium Book Plus', sans-serif;
 }
 
+p input{
+    border: 1px solid #2b1b08;
+    border-radius: 4px;
+    margin-left: 6px;
+}
+
 a{
     text-decoration: none;
     color: inherit;
+}
+
+/* base.html */
+
+.brand {
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .card{
@@ -63,10 +76,6 @@ a{
     line-height: 3px;
     text-align: center;
     color: #fbfcfb;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
 }
 
 .social-link-facebook{
@@ -85,12 +94,44 @@ a{
     background: #c4302b;
 }
 
-.brand {
-    font-size: 1.4rem;
-    font-weight: 700;
+/* Hover effect on links*/
+.social-link-facebook:hover {
+    opacity: 0.4;
 }
 
-/*This code is ust temporary to get my project running*/
+.social-link-twitter:hover {
+    opacity: 0.4;
+}
+.social-link-instagram:hover {
+    opacity: 0.4;
+}
+
+.social-link-youtube:hover {
+    opacity: 0.4;
+}
+
+
+/* LogIn.html */
+
+.container-css{
+    border: 1px solid white;
+    background-color: #fbfcfb;
+    opacity: 0.7;
+    padding-bottom: 5vh;
+}
+
+.login-input input{
+    display: inline;
+}
+
+/* LogIn.html */
+
+.signup-input input{
+    width: 80%;
+    display: block;
+}
+
+/* Credit to Matt Rudge at Code Institutem See README for links and more information*/
 
 .red-o {
     color: #E84610;
