@@ -177,8 +177,8 @@ a{
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
+    background-color: #e3e1dd;
+    color: #3d263d;
     position: relative;
 }
 
@@ -187,19 +187,19 @@ a{
     overflow: hidden;
 }
 
-.masthead-image:after {
+/*.masthead-image:after {
     content: "";
     position: absolute;
     top: 0;
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #e3e1dd;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
-}
+}*/
 
 .post-link {
     text-decoration: none;
@@ -218,7 +218,7 @@ a{
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #3d263d;
 }
 
 .btn-signup {
