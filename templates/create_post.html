@@ -3,6 +3,7 @@
 <form class="container-css" action="" method="post">
     {% csrf_token %}
     {{ form.as_p }}
+    {{ foobar|safe }}
     <button>Post</button>
 </form>
 
