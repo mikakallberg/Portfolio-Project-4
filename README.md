@@ -115,7 +115,7 @@ Validator testing!
 - Inconsistent migration history, resolved by resetting both the SQLite3 amd postgreSQL databases.
 - Blog content and excerpt did not appear. Coder forgot to properly add content and excerpt, solved by adding content and excerpt. (Yes, coder and tutor support agent laughed)
 - When adding a create_post.html, page doesn't render, gives an error 404 page. Solution change places of the paths in url_patterns in urls.py.
-- When trying to POST a new blogpost through the UI, throws error 404, the path the system is taking goes through the projects urls.py. It doesnt find the "http://localhost:8000/create_post/POST" url pattern.
+- When trying to POST a new blogpost through the UI, throws error 404, the path the system is taking goes through the projects urls.py. It doesnt find the "http://localhost:8000/create_post/POST" url pattern. Solution add success_url = '/' to forms.py. 
 
 
 ### Unfixed bugs
@@ -136,7 +136,7 @@ The project is not deployed
 
 ## Thank you
 - [Spencer Barriball](https://github.com/5pence) for always being there and being a fantastic mentor.
-- [Daisy McGirr](https://github.com/Daisy-McG) for helping me and giving me insights into backend cooperation with frontend.
+- [Daisy McGirr](https://github.com/Daisy-McG) for helping me and giving me insights into backend cooperation with frontend, helping me debug the create_post bug.
 - [Bim Williams](https://github.com/MrBim) for being a good person to talk, and for supplying link to API to render content into a downloadable PDF.
 
 ### Content
