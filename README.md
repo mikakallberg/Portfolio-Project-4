@@ -99,6 +99,7 @@ Validator testing!
 - Ensured functionality of alert messages, when commenting, login, logout.
 - Ensured functionality of copyright.
 - After fixing CSS style for sign in and signup pages, made sure logout page looked good.
+- After solution to bug related to summernote editor. Made sure creating post and affiliated functions still worked.
 
 ### Automated Testing
 - Continual testing done through the ------ method described in "The Clean Coder- A Code of Conduct for Professional Programmers" by Robert C. Martin and Hello Django lessons.
@@ -115,7 +116,14 @@ Validator testing!
 - Inconsistent migration history, resolved by resetting both the SQLite3 amd postgreSQL databases.
 - Blog content and excerpt did not appear. Coder forgot to properly add content and excerpt, solved by adding content and excerpt. (Yes, coder and tutor support agent laughed)
 - When adding a create_post.html, page doesn't render, gives an error 404 page. Solution change places of the paths in url_patterns in urls.py.
-- When trying to POST a new blogpost through the UI, throws error 404, the path the system is taking goes through the projects urls.py. It doesnt find the "http://localhost:8000/create_post/POST" url pattern. Solution add success_url = '/' to forms.py. 
+- When trying to POST a new blogpost through the UI, throws error 404, the path the system is taking goes through the projects urls.py. It doesnt find the "http://localhost:8000/create_post/POST" url pattern. Solution add success_url = '/' to forms.py.
+- When trying to add summernote editer to my form it's not working. Solution:
+  - in forms.py:
+    - change the import and class to a class CreatePostForm(forms.ModelForm)
+  - in views.py:
+    - Add a class: class CreatePostView(CreateView)
+  - In blog/urls.py:
+    - change path to: path('create_post/', views.CreatePostView.as_view(), name='create_post'),
 
 
 ### Unfixed bugs

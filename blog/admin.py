@@ -1,8 +1,6 @@
 """ Admin page for settings in admin view """
 from django.contrib import admin
-from django import forms
 from django_summernote.admin import SummernoteModelAdmin
-from django_summernote.fields import SummernoteTextFormField
 from .models import BlogPost, CommentSection
 
 
@@ -14,10 +12,6 @@ class PostAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('status', 'created_on')
     summernote_fields = ('content')
-
-
-class SummernoteAddOn(forms.Form):
-    summernote_form = SummernoteTextFormField()
 
 
 @admin.register(CommentSection)

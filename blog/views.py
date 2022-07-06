@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.views.generic.edit import CreateView
 from django.http import HttpResponseRedirect
 from .models import BlogPost
-from .forms import CommentForm
+from .forms import CreatePostForm, CommentForm
 
 
 class PostList(generic.ListView):
@@ -12,6 +13,12 @@ class PostList(generic.ListView):
     context_object_name = 'post_list'
     template_name = 'index.html'
     paginate_by = 6
+
+
+class CreatePostView(CreateView):
+    template_name = 'create_post.html'
+    form_class = CreatePostForm
+    success_url = '/'
 
 
 class PostDetail(View):

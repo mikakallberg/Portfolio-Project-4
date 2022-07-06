@@ -1,13 +1,15 @@
 from django import forms
-from django.views.generic.edit import CreateView
+from django_summernote.widgets import SummernoteWidget
 from .models import CommentSection, BlogPost
 
 
-class CreatePostForm(CreateView):
-    model = BlogPost
-    template_name = 'create_post.html'
-    fields = ('__all__')
-    success_url = '/'
+class CreatePostForm(forms.ModelForm):
+    class Meta:
+        model = BlogPost
+        fields = ('__all__')
+        widgets = {
+            'content': SummernoteWidget()
+        }
 
 
 class CommentForm(forms.ModelForm):
