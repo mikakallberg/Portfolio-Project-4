@@ -4,7 +4,6 @@ Instructions for functionality of blog
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-from django.urls import reverse
 
 # Keep drafts and published posts separated
 STATUS = ((0, 'Draft'), (1, 'Published'))
@@ -28,9 +27,6 @@ class BlogPost(models.Model):
     excerpt = models.TextField(blank=True)
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
-
-    def return_post(self):
-        return reverse('home')
 
     class Meta:
         """ Sets the order of posts to most recently created first """
@@ -59,7 +55,8 @@ class CommentSection(models.Model):
 
     class Meta:
         """
-        Handles order of published comments, oldest first.
+        Handles order of published comments, oldest first,
+        and return comment
         """
         ordering = ['created_on']
 

@@ -1,6 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.views.generic.edit import CreateView
 from django.http import HttpResponseRedirect
 from .models import BlogPost
 from .forms import CommentForm
@@ -16,7 +15,7 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-    """ Settings for displaying individual BlogPosts and likes"""
+    """ Settings for displaying individual BlogPosts"""
 
     def get(self, request, slug, *args, **kwargs):
         """ Get information on Blogpost from backend """
@@ -82,9 +81,3 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-
-class CreatePost(CreateView):
-    model = BlogPost
-    template_name = 'create_post.html'
-    fields = '__all__'

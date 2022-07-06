@@ -115,6 +115,7 @@ Validator testing!
 - Inconsistent migration history, resolved by resetting both the SQLite3 amd postgreSQL databases.
 - Blog content and excerpt did not appear. Coder forgot to properly add content and excerpt, solved by adding content and excerpt. (Yes, coder and tutor support agent laughed)
 - When adding a create_post.html, page doesn't render, gives an error 404 page. Solution change places of the paths in url_patterns in urls.py.
+- When trying to POST a new blogpost through the UI, throws error 404, the path the system is taking goes through the projects urls.py. It doesnt find the "http://localhost:8000/create_post/POST" url pattern.
 
 
 ### Unfixed bugs
