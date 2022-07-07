@@ -1,19 +1,11 @@
+""" Creating in UI view """
 from django import forms
-from django_summernote.widgets import SummernoteWidget
-from .models import CommentSection, BlogPost
-
-
-class CreatePostForm(forms.ModelForm):
-    class Meta:
-        model = BlogPost
-        fields = ('__all__')
-        widgets = {
-            'content': SummernoteWidget(),
-            'excerpt': SummernoteWidget()
-        }
+from .models import CommentSection
 
 
 class CommentForm(forms.ModelForm):
+    """ Creating a comment in UI """
     class Meta:
+        """ Settings for comment in UI """
         model = CommentSection
         fields = ('body',)

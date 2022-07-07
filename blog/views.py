@@ -3,22 +3,16 @@ from django.views import generic, View
 from django.views.generic.edit import CreateView
 from django.http import HttpResponseRedirect
 from .models import BlogPost
-from .forms import CreatePostForm, CommentForm
+from .forms import CommentForm
 
 
 class PostList(generic.ListView):
-    """ Settings for front view of blog """
+    """ Settings frontview of blog """
     model = BlogPost
     queryset = BlogPost.objects.filter(status=1).order_by('-created_on')
     context_object_name = 'post_list'
     template_name = 'index.html'
     paginate_by = 6
-
-
-class CreatePostView(CreateView):
-    template_name = 'create_post.html'
-    form_class = CreatePostForm
-    success_url = '/'
 
 
 class PostDetail(View):
@@ -41,7 +35,8 @@ class PostDetail(View):
                 'comments': comments,
                 'commented': False,
                 'liked': liked,
-                'comment_form': CommentForm()
+                'comment_form': CommentForm(),
+                'title': post.title,
             },
         )
 
@@ -73,7 +68,8 @@ class PostDetail(View):
                 'comments': comments,
                 'commented': True,
                 'comment_form': comment_form,
-                'liked': liked
+                'liked': liked,
+                'title': 'Create Post'
             },
         )
 

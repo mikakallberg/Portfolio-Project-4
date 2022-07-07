@@ -48,7 +48,6 @@ a{
 .card{
     border: none;
     background-color: #d3ded3;
-    box-shadow: 0 16px 48px #f0f4f0;
 }
 
 /*credit to  https://djangocentral.com/building-a-blog-application-with-django/  for sidebar widget */
