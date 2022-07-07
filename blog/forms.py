@@ -8,7 +8,8 @@ class CreatePostForm(forms.ModelForm):
         model = BlogPost
         fields = ('__all__')
         widgets = {
-            'content': SummernoteWidget()
+            'content': SummernoteWidget(),
+            'excerpt': SummernoteWidget()
         }
 
 
