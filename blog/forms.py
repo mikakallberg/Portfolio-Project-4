@@ -11,5 +11,5 @@ class CommentForm(forms.ModelForm):
         model = CommentSection
         fields = ('body',)
         labels = {
-            'body': _('Comment'),
+            'body': _(''),
         }
