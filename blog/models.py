@@ -19,7 +19,7 @@ class BlogPost(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField(blank=True)
-    excerpt = models.TextField(blank=True)
+    excerpt = models.TextField(blank=True, default='')
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='blog_posts',
         default=id(0))

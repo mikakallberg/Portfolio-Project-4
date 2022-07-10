@@ -12,7 +12,7 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                {% if "placeholder" in post.featured_image.url %}
+                                {% if 'placeholder' in post.featured_image.url %}
                                 <img class="card-img-top"
                                     src="https://res.cloudinary.com/mikakallberg/image/upload/v1656959946/vegetables_c8sl5c.jpg">
                                 {% else %}
@@ -24,7 +24,7 @@
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
+                                <p class="card-text">{{ post.content|truncatewords:50 }} </p>
                             </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
