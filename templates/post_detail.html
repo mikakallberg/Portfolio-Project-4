@@ -85,16 +85,14 @@
                         </span> wrote:
                     </p>
                     <!-- The body of the comment -->
+                    {% if request.user == comment.name %}
                     {{ comment.body | linebreaks }}
+                    <a href="{% url 'update_comment' comment.pk %}"><i class="fa-solid fa-file-pen"></i></a>
+                    <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                    {% else %}
+                    {{ comment.body | linebreaks }}
+                    {% endif %}
                 </div>
-                {% if request.user == comment.name %}
-                <p>test user {{ user.username }}</p>
-                <form method="post" style="margin-top: 1.3em;">
-                    {{ form | crispy }}
-                    {% csrf_token %}
-                    <button type="submit" class="btn btn-signup btn-lg">Edit</button>
-                </form>
-                {% endif %}
                 {% endfor %}
             </div>
         </div>

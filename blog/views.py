@@ -1,5 +1,4 @@
 from django.shortcuts import render, get_object_or_404, reverse
-from django.utils.translation import gettext_lazy as _
 from django.views import generic, View
 from django.views.generic.edit import UpdateView
 from django.http import HttpResponseRedirect
@@ -74,23 +73,31 @@ class PostDetail(View):
         )
 
     def form_valid(self, form):
+        """ validate form and connect to user """
         form.instance.created_by = self.request.user
         return super().form_valid(form)
 
 
 class CommentUpdateView(UpdateView):
+    """ Update comments via update_post.html """
     model = CommentSection
     form_class = CommentForm
-    template_name_suffix = '_post_detail'
-    template_name = 'post_detail.html'
+    context_object_name = 'comment'
+    template_name = 'update_post.html'
 
-    def get_success_url(self):
-        return reverse('/')
+    def form_valid(self, form):
+        """ Success url for getting post.slug from model.py related field """
+        self.success_url = f'/{self.get_object().post.slug}/'
+        return super().form_valid(form)
 
 
 class PostLike(View):
-
+    """ Remove or add like and redirect to post_detail.html """
     def post(self, request, slug, *args, **kwargs):
+        """
+        get object through slug,
+        if user.id matches change status on like 
+        """
         post = get_object_or_404(BlogPost, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)

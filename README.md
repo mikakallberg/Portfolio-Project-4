@@ -127,6 +127,8 @@ Validator testing!
 - Bug when trying to upload images from UI in cerate_post.html. After meeting with mentor who adviced to fullfill CRUD through comments, so not to expose uploading images to someone trying to overload my filespace in cloudinary. Also It's only going to be admin who posts blogposts.
 - Bug in automatically rendered excerpt. Paragraph-elements and classes that render automatically from content gets displayed in excerpt. Solution add a safe tag to the post.content block tag.
 - Bug. Trying to add label to commentform in UI. Solution add a comma to fields attribute and relaunch server.
+- Large bug. post_detail.html not loading, because of commentsection. cleaning up form for comments and trying different ways of rendering the commentform.
+- Large bug. update_post.html not redirecting to post_detail.html. Solution chaning the successful_url to a function form_valid under CommentUpdateView.  
 
 
 ### Unfixed bugs
@@ -147,7 +149,7 @@ The project is not deployed
 
 ## Thank you
 - [Spencer Barriball](https://github.com/5pence) for always being there and being a fantastic mentor.
-- [Daisy McGirr](https://github.com/Daisy-McG) for helping me and giving me insights into backend cooperation with frontend, helping me debug the create_post bug.
+- [Daisy McGirr](https://github.com/Daisy-McG) for helping me and giving me insights into backend cooperation with frontend, helping me with some debugs and lessons around django.
 - [Bim Williams](https://github.com/MrBim) for being a good person to talk, and for supplying link to API to render content into a downloadable PDF.
 
 ### Content
