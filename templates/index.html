@@ -24,7 +24,11 @@
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
+                                {% if 'placeholder' in post.excerpt %}
+                                <p class="card-text">{{ post.excerpt }}</p>
+                                {% else %}
                                 <p class="card-text">{{ post.content|truncatewords:50 }} </p>
+                                {% endif %}
                             </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
