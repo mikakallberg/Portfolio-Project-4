@@ -47,9 +47,16 @@ class CommentSection(models.Model):
     """ Handles comments """
 
     post = models.ForeignKey(
-        BlogPost, on_delete=models.CASCADE, related_name='comments')
-    name = models.CharField(max_length=200)
-    created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+        BlogPost,
+        on_delete=models.CASCADE,
+        related_name='comments'
+        )
+    name = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        max_length=200,
+        related_name='comment_author'
+        )
     email = models.EmailField()
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)

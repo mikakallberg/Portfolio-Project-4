@@ -36,12 +36,12 @@ class PostDetail(View):
                 'comments': comments,
                 'commented': False,
                 'liked': liked,
-                'comment_form': CommentForm(),
+                'form': CommentForm(),
                 'title': post.title,
             },
         )
 
-    def post(self, request, slug, form, *args, **kwargs):
+    def post(self, request, slug, *args, **kwargs):
         """ Send information back to backend """
         queryset = BlogPost.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -50,17 +50,16 @@ class PostDetail(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-        form.instance.created_by = self.request.user
 
-        comment_form = CommentForm(data=request.POST)
-        if comment_form.is_valid():
-            comment_form.instance.email = request.user.email
-            comment_form.instance.name = request.user.username
-            comment = comment_form.save(commit=False)
-            comment.post = post
-            comment.save()
+        form = CommentForm(data=request.POST)
+        if form.is_valid():
+            form = form.save(commit=False)
+            form.name = self.request.user
+            form.email = request.user.email
+            form.post = post
+            form.save()
         else:
-            comment_form = CommentForm()
+            form = CommentForm()
 
         return render(
             request,
@@ -69,10 +68,14 @@ class PostDetail(View):
                 'post': post,
                 'comments': comments,
                 'commented': True,
-                'comment_form': comment_form,
+                'form': form,
                 'liked': liked,
             },
         )
+
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+        return super().form_valid(form)
 
 
 class CommentUpdateView(UpdateView):
@@ -80,7 +83,9 @@ class CommentUpdateView(UpdateView):
     form_class = CommentForm
     template_name_suffix = '_post_detail'
     template_name = 'post_detail.html'
-    success_url = '/'
+
+    def get_success_url(self):
+        return reverse('/')
 
 
 class PostLike(View):
