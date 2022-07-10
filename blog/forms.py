@@ -1,5 +1,6 @@
 """ Creating in UI view """
 from django import forms
+from django.utils.translation import gettext_lazy as _
 from .models import CommentSection
 
 
@@ -8,4 +9,7 @@ class CommentForm(forms.ModelForm):
     class Meta:
         """ Settings for comment in UI """
         model = CommentSection
-        fields = ('body',)
+        fields = ('body')
+        labels = {
+            'body': _('Comment'),
+        }
