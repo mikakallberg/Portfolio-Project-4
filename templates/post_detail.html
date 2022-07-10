@@ -87,10 +87,18 @@
                     <!-- The body of the comment -->
                     {{ comment.body | linebreaks }}
                 </div>
+                {% if request.user == comment.author  %}
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" action="{% url 'update_comment' comment.pk %}" style="margin-top: 1.3em;">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-signup btn-lg">Edit</button>
+                </form>
+                {% endif %}
                 {% endfor %}
             </div>
         </div>
-        <!-- Comment section -->
+        <!-- Create comment section -->
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
                 {% if commented %}
