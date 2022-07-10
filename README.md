@@ -124,6 +124,7 @@ Validator testing!
     - Add a class: class CreatePostView(CreateView)
   - In blog/urls.py:
     - change path to: path('create_post/', views.CreatePostView.as_view(), name='create_post'),
+- Bug when trying to upload images from UI in cerate_post.html. After meeting with mentor who adviced to fullfill CRUD through comments, so not to expose uploading images to someone trying to overload my filespace in cloudinary. Also It's only going to be admin who posts blogposts.
 
 
 ### Unfixed bugs
