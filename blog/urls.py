@@ -6,7 +6,7 @@ urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path(
-        '<slug:slug>/comment/<int:pk>',
+        '<slug:slug>/<int:pk>',
         views.CommentUpdateView.as_view(),
         name='update_comment'
         ),
