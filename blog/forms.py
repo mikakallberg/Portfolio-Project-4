@@ -9,7 +9,7 @@ class CommentForm(forms.ModelForm):
     class Meta:
         """ Settings for comment in UI """
         model = CommentSection
-        fields = ('body')
+        fields = ('body',)
         labels = {
             'body': _('Comment'),
         }

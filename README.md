@@ -126,7 +126,7 @@ Validator testing!
     - change path to: path('create_post/', views.CreatePostView.as_view(), name='create_post'),
 - Bug when trying to upload images from UI in cerate_post.html. After meeting with mentor who adviced to fullfill CRUD through comments, so not to expose uploading images to someone trying to overload my filespace in cloudinary. Also It's only going to be admin who posts blogposts.
 - Bug in automatically rendered excerpt. Paragraph-elements and classes that render automatically from content gets displayed in excerpt. Solution add a safe tag to the post.content block tag.
-- Bug. Trying to add label to commentform in UI.
+- Bug. Trying to add label to commentform in UI. Solution add a comma to fields attribute and relaunch server.
 
 
 ### Unfixed bugs
