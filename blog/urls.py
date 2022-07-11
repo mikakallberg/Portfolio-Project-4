@@ -12,7 +12,7 @@ urlpatterns = [
         name='update_comment'
         ),
     path(
-        'delete_comment/<int:pk>/',
+        'delete_comment/<slug:slug>/<int:pk>/',
         views.CommentDeleteView.as_view(),
         name='delete_comment'
         ),

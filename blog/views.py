@@ -103,10 +103,11 @@ class CommentDeleteView(DeleteView):
     context_object_name = 'comment'
     # success_url = reverse_lazy('post_detail')
 
-    def get_success_url(self, slug, *arg):
+    def get_success_url(self, *args):
         """ Success url return to blogpost in question """
-        self.success_url = f'/{self.get_object().post.slug}/'
-        return reverse_lazy('post_detail', args=[slug])
+        self.success_url = f'/{self.get_object().post.slug}'
+        self.slug = self.get_object().post.slug
+        return reverse_lazy('post_detail', args=[self.slug])
 
 
 class PostLike(View):
