@@ -14,9 +14,10 @@
                             <div class="image-container">
                                 {% if 'placeholder' in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://res.cloudinary.com/mikakallberg/image/upload/v1656959946/vegetables_c8sl5c.jpg">
+                                    src="https://res.cloudinary.com/mikakallberg/image/upload/v1656959946/vegetables_c8sl5c.jpg" 
+                                    alt="Image of carrots, leaks and potatoes on a wodden table">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="{{ post.alt_tag.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>

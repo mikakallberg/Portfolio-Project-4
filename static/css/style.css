@@ -186,7 +186,7 @@ a{
     overflow: hidden;
 }
 
-/*.masthead-image:after {
+.masthead-image:after {
     content: "";
     position: absolute;
     top: 0;
@@ -198,7 +198,7 @@ a{
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
-}*/
+}
 
 .post-link {
     text-decoration: none;

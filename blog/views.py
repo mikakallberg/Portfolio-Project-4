@@ -4,7 +4,7 @@ from django.views import generic, View
 from django.views.generic.edit import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
-from .models import BlogPost, CommentSection
+from .models import BlogPost, PostImage, CommentSection
 from .forms import CommentForm
 
 
@@ -24,6 +24,7 @@ class PostDetail(View):
         """ Get information on Blogpost from backend """
         queryset = BlogPost.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
+        photos = PostImage.objects.filter(post=post)
         comments = post.comments.filter(approved=True).order_by('-created_on')
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
@@ -34,6 +35,7 @@ class PostDetail(View):
             'post_detail.html',
             {
                 'post': post,
+                'photos': photos,
                 'comments': comments,
                 'commented': False,
                 'liked': liked,
@@ -46,6 +48,7 @@ class PostDetail(View):
         """ Send information back to backend """
         queryset = BlogPost.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
+        photos = PostImage.objects.filter(post=post)
         comments = post.comments.filter(
             approved=True).order_by("-created_on")
         liked = False
@@ -67,6 +70,7 @@ class PostDetail(View):
             'post_detail.html',
             {
                 'post': post,
+                'photos': photos,
                 'comments': comments,
                 'commented': True,
                 'form': form,

@@ -26,6 +26,7 @@ class BlogPost(models.Model):
         default=id(0))
     status = models.IntegerField(choices=STATUS, default=0)
     featured_image = CloudinaryField('image', default='placeholder')
+    alt_tag = models.CharField(max_length=100, default='image related to post')
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
 
@@ -43,6 +44,16 @@ class BlogPost(models.Model):
         return self.likes.count()
 
 
+class PostImage(models.Model):
+    """ Manages the model for uploading multiple images """
+    post = models.ForeignKey(BlogPost, default=None, on_delete=models.CASCADE)
+    image = CloudinaryField('image')
+    alt_tag = models.CharField(max_length=100, default='image related to post')
+
+    def __str__(self):
+        return self.post.title
+
+
 class CommentSection(models.Model):
     """ Handles comments """
 
@@ -58,7 +69,7 @@ class CommentSection(models.Model):
         related_name='comment_author'
         )
     email = models.EmailField()
-    body = models.TextField()
+    body = models.TextField(max_length=400)
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 

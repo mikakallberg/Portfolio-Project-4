@@ -11,12 +11,37 @@
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
-            <div class="d-none d-md-block col-md-6 masthead-image">
+            <div class="d-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://res.cloudinary.com/mikakallberg/image/upload/v1656959946/vegetables_c8sl5c.jpg" class="img-fluid" width="100%">
+                <img src="https://res.cloudinary.com/mikakallberg/image/upload/v1656959946/vegetables_c8sl5c.jpg"
+                    class="img-fluid" width="100%" alt="Image of carrots, leaks and potatoes on a wodden table">
                 {% else %}
-                <img src="{{ post.featured_image.url }}" width="100%">
+                <!-- Image carousel-->
+                {% for photo in photos %}
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{{ photos.image.url }}" class="d-block w-100 img-fluid" alt="{{ photos.alt_tag.url }}">
+                        </div>
+                    </div>
+                    <!-- Carousel control buttons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                {% endfor %}
                 {% endif %}
             </div>
         </div>

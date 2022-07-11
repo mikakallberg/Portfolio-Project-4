@@ -1,7 +1,12 @@
 """ Admin page for settings in admin view """
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import BlogPost, CommentSection
+from .models import PostImage, BlogPost, CommentSection
+
+
+class PostImage(admin.StackedInline):
+    """ Stacks multiple image upload fields inline """
+    model = PostImage
 
 
 @admin.register(BlogPost)
@@ -12,6 +17,7 @@ class PostAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     list_filter = ('status', 'created_on')
     summernote_fields = ('content')
+    inlines = [PostImage]
 
 
 @admin.register(CommentSection)
