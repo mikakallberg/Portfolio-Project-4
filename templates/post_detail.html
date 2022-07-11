@@ -88,7 +88,7 @@
                     {% if request.user == comment.name %}
                     {{ comment.body | linebreaks }}
                     <a href="{% url 'update_comment' comment.pk %}"><i class="fa-solid fa-file-pen"></i></a>
-                    <a href="#"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="{% url 'delete_comment' comment.pk %}"><i class="fa-solid fa-trash-can"></i></a>
                     {% else %}
                     {{ comment.body | linebreaks }}
                     {% endif %}

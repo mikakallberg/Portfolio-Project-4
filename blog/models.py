@@ -70,7 +70,9 @@ class CommentSection(models.Model):
         ordering = ['created_on']
 
     def __str__(self):
+        """ Returns comment with name and comment body"""
         return f"Comment {self.body} by {self.name}"
 
     def get_absolute_url(self):
+        """ Returns comment with primary key"""
         return reverse('post_detail', kwargs={'pk': self.pk})
