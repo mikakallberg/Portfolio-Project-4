@@ -1,20 +1,29 @@
 """ Rendering the functionality in user views """
 from django.shortcuts import render, get_object_or_404, reverse
-from django.views import generic, View
-from django.views.generic.edit import UpdateView, DeleteView
+from django.views.generic import (
+    View,
+    ListView,
+    TemplateView,
+    UpdateView,
+    DeleteView)
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy
 from .models import BlogPost, PostImage, CommentSection
 from .forms import CommentForm
 
 
-class PostList(generic.ListView):
+class PostList(ListView):
     """ Settings frontview of blog """
     model = BlogPost
     queryset = BlogPost.objects.filter(status=1).order_by('-created_on')
     context_object_name = 'post_list'
     template_name = 'index.html'
     paginate_by = 6
+
+
+class AboutView(TemplateView):
+    """ Rendering about page """
+    template_name = 'about.html'
 
 
 class PostDetail(View):
