@@ -25,6 +25,7 @@ h1, h2, h3, h4, h5{
 
 p{
     font-family: 'Gentium Book Plus', sans-serif;
+    color: #2b1b08;
 }
 
 p input{
@@ -36,6 +37,37 @@ p input{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.btn-signup {
+    background-color: #8ba78b;
+    color: #fbfcfb;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #fbfcfb;
+    color: #8ba78b;
+}
+
+.btn-like {
+    color: #bd4242;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #bd4242;
+    background: transparent;
+    border: none;
+}
+
+.container-css{
+    border: 1px solid white;
+    background-color: #fbfcfb;
+    opacity: 0.7;
+    padding-bottom: 5vh;
 }
 
 /* base.html */
@@ -52,6 +84,25 @@ a{
 .card{
     border: none;
     background-color: #d3ded3;
+}
+
+.next, 
+.previous{
+    color: #b6c8b6;
+    position: relative;
+    display: block;
+    padding: 1vh;
+    margin-top: 3vh;
+    text-decoration: none;
+    background-color: #fbfcfb;
+    border: 2px solid #a8bda8;
+}
+
+.next:hover, 
+.previous:active{
+    color: #fbfcfb;
+    background-color: #a8bda8;
+    border: 2px solid #a8bda8;
 }
 
 /*credit to  https://djangocentral.com/building-a-blog-application-with-django/  for sidebar widget */
@@ -114,20 +165,22 @@ a{
 }
 
 
-/* LogIn.html */
-
-.container-css{
-    border: 1px solid white;
-    background-color: #fbfcfb;
-    opacity: 0.7;
-    padding-bottom: 5vh;
-}
+/* login.html, signup.html, logout.html */
 
 .login-input input{
     display: inline;
 }
 
-/* LogIn.html */
+.link {
+    color: #8ba78b;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
 
 .signup-input input{
     width: 80%;
@@ -135,22 +188,6 @@ a{
 }
 
 /* Credit to Matt Rudge at Code Institutem See README for links and more information*/
-
-.red-o {
-    color: #E84610;
-}
-
-.thin {
-    font-weight: 300;
-}
-
-.light-bg {
-    background-color: #fff;
-}
-
-.dark-bg {
-    background-color: #445261;
-}
 
 .image-container {
     position: relative;
@@ -175,13 +212,12 @@ a{
     overflow: hidden;
     position: relative;
     display: inline-block;
-    /*height: 33vh;*/
     width: 100%;
 }
 
 .masthead-text {
     background-color: #e3e1dd;
-    color: #3d263d;
+    /*color: #3d263d;*/
     position: relative;
 }
 
@@ -190,28 +226,9 @@ a{
     overflow: hidden;
 }
 
-/*.masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #e3e1dd;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
-}*/
-
 .post-link {
     text-decoration: none;
-    color: #445261;
-}
-
-.post-link:hover,
-.page-link {
-    color: #E84610;
+    /*color: #445261;*/
 }
 
 .post-title {
@@ -221,40 +238,15 @@ a{
 
 .post-subtitle {
     margin-left: 5%;
-    color: #3d263d;
+    /*color: #3d263d;*/
 }
 
-.btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
-}
-
-.link {
-    color: #23BBBB;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
-
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
-
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
+/* Media Query*/
+@media screen and (min-width: 900px){
+    .social-links a i{
+        height: 40px;
+        width: 40px;
+        font-size: 22px;
+        line-height: 14px;
+    }
 }
