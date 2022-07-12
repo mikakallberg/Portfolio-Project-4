@@ -19,16 +19,19 @@
                     class="img-fluid" width="100%" alt="Image of carrots, leaks and potatoes on a wodden table">
                 {% else %}
                 <!-- Image carousel-->
-                {% for photo in photos %}
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        {% for photo in photos %}
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ forloop.counter0 }}"
+                            class="{% if forloop.counter0 == 0 %} active {% endif %}" aria-current="true" aria-label="Slide {{ forloop.counter0 }}"></button>
+                        {% endfor %}
                     </div>
                     <div class="carousel-inner">
+                        {% for photo in photos %}
                         <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
                             <img src="{{ photos.image.url }}" class="d-block w-100 img-fluid" alt="{{ photos.alt_tag.url }}">
                         </div>
+                        {% endfor %}
                     </div>
                     <!-- Carousel control buttons -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -42,7 +45,6 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                {% endfor %}
                 {% endif %}
             </div>
         </div>
