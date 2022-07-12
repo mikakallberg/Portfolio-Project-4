@@ -130,7 +130,7 @@ Validator testing!
 - Large bug. post_detail.html not loading, because of commentsection. cleaning up form for comments and trying different ways of rendering the commentform.
 - Large bug. update_post.html not redirecting to post_detail.html. Solution chaning the successful_url to a function form_valid under CommentUpdateView.
 - Bug when returning after deleting comment. Solution taking post.slug along from initial url and returning at as argument in a reverse_lazy.
-- CSS bug hides carousel.
+- Bug in carousel at post_detail.html. Typo was found in for loop. 
 
 
 ### Unfixed bugs

@@ -45,6 +45,10 @@ a{
     font-weight: 700;
 }
 
+.content-clr{
+    background-color: #b6c8b6;
+}
+
 .card{
     border: none;
     background-color: #d3ded3;
@@ -171,7 +175,7 @@ a{
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    /*height: 33vh;*/
     width: 100%;
 }
 
@@ -186,7 +190,7 @@ a{
     overflow: hidden;
 }
 
-.masthead-image:after {
+/*.masthead-image:after {
     content: "";
     position: absolute;
     top: 0;
@@ -198,7 +202,7 @@ a{
     -moz-transform: skew(15deg);
     transform: skew(15deg);
     z-index: 100;
-}
+}*/
 
 .post-link {
     text-decoration: none;

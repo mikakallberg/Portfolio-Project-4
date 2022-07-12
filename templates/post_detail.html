@@ -5,13 +5,12 @@
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
-            <!--
             <div class="col-md-6 masthead-text">
-                Post title goes in these h1 tags
+                <!--Post title goes in these h1 tags-->
                 <h1 class="post-title">{{ post.title }}</h1>
-                Post author goes before the | the post's created date goes after
+                <!--Post author goes before the | the post's created date goes after-->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
-            </div>-->
+            </div>
             <div class="d-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
@@ -21,13 +20,13 @@
                 <!-- Image carousel-->
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        {% for photo in photos %}
+                        {% for photos in photos %}
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ forloop.counter0 }}"
                             class="{% if forloop.counter0 == 0 %} active {% endif %}" aria-current="true" aria-label="Slide {{ forloop.counter0 }}"></button>
                         {% endfor %}
                     </div>
                     <div class="carousel-inner">
-                        {% for photo in photos %}
+                        {% for photos in photos %}
                         <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
                             <img src="{{ photos.image.url }}" class="d-block w-100 img-fluid" alt="{{ photos.alt_tag.url }}">
                         </div>
@@ -50,7 +49,11 @@
         </div>
     </div>
 </div>
-
+<div class="row">
+    <div class="col">
+        <hr>
+    </div>
+</div>
 <div class="container">
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
