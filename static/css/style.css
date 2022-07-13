@@ -223,7 +223,6 @@ a{
 
 .masthead-text {
     background-color: #e3e1dd;
-    /*color: #3d263d;*/
     position: relative;
 }
 
@@ -234,7 +233,6 @@ a{
 
 .post-link {
     text-decoration: none;
-    /*color: #445261;*/
 }
 
 .post-title {
@@ -244,7 +242,6 @@ a{
 
 .post-subtitle {
     margin-left: 5%;
-    /*color: #3d263d;*/
 }
 
 /* Media Query*/
