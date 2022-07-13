@@ -22,7 +22,7 @@
 * [Credits](#credits)
     - [Mentoring](#mentoring)
     - [Content](#content)
-    - [Media](#media)
+    - [Media](/credits.md)
 
 # Project Purpose
 ## Learning Outcomes
@@ -62,7 +62,7 @@ Initial Plan page 1.                                 | Initial Plan page 2
 ## User Goal
 
 
-# Game Content
+# Blog Content
 ## Features
 
 ### Existing features
@@ -188,6 +188,28 @@ https://unsplash.com/photos/jPJ3GqH_HsE?utm_source=unsplash&utm_medium=referral&
 https://unsplash.com/photos/484GsKrL5r8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 https://unsplash.com/photos/2qEv_MOltfk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 https://unsplash.com/photos/Dibo4TSF3Jw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Salad
+https://www.almanac.com/how-grow-your-own-salad-greens
+https://www.almanac.com/video/growing-lettuce-and-salad-greens-containers
+https://unsplash.com/photos/Bbq3H7eGids?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/bk11wZwb9F4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/dI6hZvxWvTw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/R-8-da2yRgg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Onions
+https://www.almanac.com/growing-onions
+https://unsplash.com/photos/7CcXR5wIhEY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/0Y8bjjMU7KQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/nCgFMzie7_A?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/YC2H1-tMy5o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+Bell peppers
+https://www.almanac.com/plant/bell-peppers
+https://unsplash.com/photos/H1C11hL-oiw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/vrbZVyX2k4I?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/xHnZIPZNxZk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
 - 
 - 
 - 
