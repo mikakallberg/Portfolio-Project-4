@@ -161,8 +161,33 @@ The project is not deployed
 ### Media
 - For how to make the README nav-bar https://github.com/artkonekt/menu/blob/master/README.md was used.
 - As template for README https://github.com/mikakallberg/readme-template/blob/master/README.md was used.
-- 
+favicon: https://pixabay.com/sv/vectors/v%c3%a4xter-mycket-liten-sprouty-gr%c3%b6n-576558/
+soil post
+- https://sv.wikipedia.org/wiki/Backtimjan
+https://unsplash.com/photos/jin4W1HqgL4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/pj7NdlymKq8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/9SjCXUq_qSE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://www.soils.org/files/sssa/iys/march-soils-overview.pdf
+https://www.clientearth.org/latest/latest-updates/news/why-soil-matters/
+tomatoe post
+https://www.gardenersworld.com/how-to/grow-plants/how-to-grow-tomatoes/
+https://pixabay.com/sv/photos/tomater-vin-tr%c3%a4dg%c3%a5rd-f%c3%a4rsk-mogen-4474174/
+https://unsplash.com/photos/3rGrIigBq8Q?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/S3wQbItzrg4?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/BQgNC4arlKY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/A1CTgIViTMc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/ettlwvew0-g?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
+carrots
+https://www.gardeningknowhow.com/edible/vegetables/carrot/how-to-grow-carrots.htm
+https://unsplash.com/photos/La8Y09cg_yo?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/iPiXhoMUcV8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+
+the humble potatoe
+https://unsplash.com/photos/jPJ3GqH_HsE?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLinkpotat
+https://unsplash.com/photos/484GsKrL5r8?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/2qEv_MOltfk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+https://unsplash.com/photos/Dibo4TSF3Jw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 - 
 - 
 - 
