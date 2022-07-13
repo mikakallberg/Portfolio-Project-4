@@ -1,9 +1,23 @@
 {% extends 'base.html' %} {% block content %}
 
 {% load crispy_forms_tags %}
-<form method="post" action="{% url 'update_comment' comment.pk %}" style="margin-top: 1.3em;">
-    {{ form | crispy }}
-    {% csrf_token %}
-    <button type="submit" class="btn btn-signup btn-lg">Edit</button>
-</form>
+<div class="container container-css">
+    <div class="row justify-content-center mt-5">
+        <div class="col col-md-6 col-sm-12">
+            <h2>Please Edit your comment here:</h2>
+            <p>But please know that any edit you make will not be reversible.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-5 col-sm-12">
+            <form method="post" action="{% url 'update_comment' comment.pk %}" style="margin-top: 1.3em;">
+                {{ form | crispy }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-signup btn-lg">Edit</button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock content %}
