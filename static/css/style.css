@@ -248,7 +248,7 @@ a{
 }
 
 /* Media Query*/
-@media screen and (min-width: 900px){
+@media screen and (min-width: 550px){
     .social-links a i{
         height: 40px;
         width: 40px;
