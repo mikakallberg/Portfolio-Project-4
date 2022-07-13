@@ -2,7 +2,7 @@
 {% block content %}
 
 {% load crispy_forms_tags %}
-<div class="container">
+<div class="container container-css">
     <div class="row justify-content-center mt-5">
         <div class="col-md-5 col-sm-12">
             <h5>Are You Sure?</h5>
@@ -11,6 +11,11 @@
                 {% csrf_token %}
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-danger">Delete</button>
+                    <a href="{% url 'home' %}">
+                        <div>
+                            <h5>Go Back!</h5>
+                        </div>
+                    </a>
                 </div>
             </form>
         </div>

@@ -114,7 +114,6 @@ class CommentDeleteView(DeleteView):
     model = CommentSection
     template_name = 'delete_comment_post.html'
     context_object_name = 'comment'
-    # success_url = reverse_lazy('post_detail')
 
     def get_success_url(self, *args):
         """ Success url return to blogpost in question """
