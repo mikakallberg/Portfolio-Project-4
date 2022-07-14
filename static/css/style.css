@@ -101,6 +101,7 @@ a{
 .next:hover, 
 .previous:active{
     color: #fbfcfb;
+    text-decoration: none;
     background-color: #a8bda8;
     border: 2px solid #a8bda8;
 }
