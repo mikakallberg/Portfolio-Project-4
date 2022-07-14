@@ -52,6 +52,12 @@ The project is not deployed
                             - git add .
                             - git commit -m "Deployment commit"
                             - git push
+                            - Since this did'nt work connection to Heroku was established through login in to heroku through terminal
+                            - heroku login -i
+                            - heroku run python3 manage.py migrate
+                            - heroku run python3 manage.py migrate --app the-green-thumb
+                            - this launched the site successfully
+                            - set debug to false to let CSS come through.
                 - In Heroku:
                             - Remove DISABLE_COLLECTSTATIC
                             - 
