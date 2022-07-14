@@ -65,7 +65,7 @@ class CommentSection(models.Model):
     name = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        max_length=200,
+        max_length=20,
         related_name='comment_author'
         )
     email = models.EmailField()
