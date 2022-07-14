@@ -58,6 +58,10 @@ The project is not deployed
                             - heroku run python3 manage.py migrate --app the-green-thumb
                             - this launched the site successfully
                             - set debug to false to let CSS come through.
+                            -create a superuser in heroku
+                            - heroku login -i
+                            - heroku run python3 manage.py createsuperuser --app the-green-thumb
                 - In Heroku:
                             - Remove DISABLE_COLLECTSTATIC
-                            - 
+                            - Deploy manually
+                            - Deployment syccessfull with all functionality and style.

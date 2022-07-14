@@ -102,6 +102,14 @@
 ## Image Credits
 #
 
+#
+#### About us picture
+#
+[About page image](https://unsplash.com/photos/6ypOmTNK2FA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+#
+![About image](/media/about_pic.jpg)
+
+#
 #### Favicons
 #
 - For the favicon decorating the corner of ever title page. [Pixabay](https://pixabay.com/sv/vectors/v%c3%a4xter-mycket-liten-sprouty-gr%c3%b6n-576558/) was used to find a good image to then render into a appropiate format using the [Favicon converter](https://favicon.io/favicon-converter/).
