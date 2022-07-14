@@ -17,7 +17,7 @@
   - in forms.py:
     - change the import and class to a class CreatePostForm(forms.ModelForm)
   - in views.py:
-    - Add a class: class CreatePostView(CreateView)
+    -  Add a class: class CreatePostView(CreateView)
   - In blog/urls.py:
     - change path to: path('create_post/', views.CreatePostView.as_view(), name='create_post'),
 - Bug when trying to upload images from UI in cerate_post.html. After meeting with mentor who adviced to fullfill CRUD through comments, so not to expose uploading images to someone trying to overload my filespace in cloudinary. Also It's only going to be admin who posts blogposts.
@@ -32,10 +32,18 @@
 
 
 ### Unfixed bugs
-- 
-- 
-- 
-- 
+- From information from Tutor support pylint error are from Pyhton not being able to recognize django code properly, so all pylint bugs are left.
+#### Blog-folder
+- admin.py
+- - pylint error
+- models.py
+- - 3 pylint errors
+- views.py
+- - 6 pylint errors
+#### App-folder
+- settings.py
+- - 5 pylint errors
+- - 1 flake error regarding the env.py file, added in when following " I think therefore I blog walkthru"
 #
 *[Back to README Home page](/README.md)
 #

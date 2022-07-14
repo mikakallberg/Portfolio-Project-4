@@ -58,6 +58,7 @@
 - - As database in Heroku
 - [SQLite](https://www.sqlite.org/index.html)
 - - As database for Gitpod, the initial thought was to use this for unittest.
+  The setting is left as part of future features, to have automatic testing instead of manual testing
 
 ### Frameworks and tools
 - [Bootstrap](https://getbootstrap.com/)
@@ -66,6 +67,7 @@
 - [Fontawesome](https://fontawesome.com/)
 - [Django-Crispyforms](https://django-crispy-forms.readthedocs.io/en/latest/)
 - [Django-Copyright](https://pypi.org/project/django-copyright/)
+- [Google fonts](https://fonts.google.com/specimen/Playfair+Display?category=Serif,Sans+Serif#standard-styles)
 
 ### Cloud storage and deployment services
 - [Cloudinary](https://cloudinary.com/)
