@@ -11,7 +11,10 @@ Initial Plan page 1.                                 | Initial Plan page 2
 ![Initial Plan 1](image file link goes here)  | ![Initial Plan 2](image file link goes here)
 #
 ### Checklist:
-- to keep track of what to do and improvements on the initial plan, I use a checklist. Since this project isn't working, the list is incomplete.
+- to keep track of what to do and improvements on the initial plan, I use a checklist.
+Initial Plan page 1.                                 | Initial Plan page 2
+:--------------------------------------------------: | :--------------------------------------------------:
+![Initial Plan 1](image file link goes here)  | ![Initial Plan 2](image file link goes here)
 
 ![Checklist](image-link here)
 

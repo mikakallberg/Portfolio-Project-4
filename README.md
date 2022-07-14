@@ -6,6 +6,9 @@
     - [Learning Outcomes](#learning-outcomes)
     - [Project Requirements](#project-requirements)
 * [Initial Planning](/deployment.md)
+* [User Experience](#user-experience-ux)
+    - [Demographics](#demographics)
+    - [User Goal](#user-goals)
 * [Features](/features.md)
 * [Testing](/testing.md)
 * [Bugs](/bugs.md)
@@ -28,22 +31,26 @@ Taken from Assessment Handbook provided by Code Institute or derived therefrom.
 
 
 # Initial planning
-### 
-
-
-
-### GitHub Projects
-
-
-
-### Media for inspiration
-- 
-
+### Initial plan
+- In the intial meeting there was three ideas. Recipe website, Garden blog and Car Dealship. Two rough wireframes where created.
+#
+Wireframe 1                                         | Wireframe 2
+:--------------------------------------------------: | :--------------------------------------------------:
+ ![Wireframe 1](/media/wireframe.png)                | ![Wireframe 2](/media/wireframe_2.png)
+#
+### Plan
+- it was decided to build a Garden blog, so a rough sketch of a garden blog with inspiration from existing blogs where made. 
+  Please visit [credits to see the inspiration used](/credits.md)
+#
+ Home Page                                            | Blogpost page
+:---------------------------------------------------: | :--------------------------------------------------:
+ ![Rough sketch of Garden blog](/media/front_page.png)|  ![Rough sketch of blogpost page](/media/post_page.png)
+#
 
 # User Experience (UX)
 ## Demographics
 
-## User Goal
+## User Goals
 
 
 
