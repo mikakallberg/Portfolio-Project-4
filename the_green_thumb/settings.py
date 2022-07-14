@@ -108,7 +108,6 @@ WSGI_APPLICATION = 'the_green_thumb.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if 'TESTING' in os.environ:
-    print('Loading SQLite3...')
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -116,7 +115,6 @@ if 'TESTING' in os.environ:
         }
     }
 else:
-    print('Loading postgreSQL...')
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
