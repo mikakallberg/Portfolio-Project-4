@@ -7,7 +7,7 @@
 
 body{
     background-color: #f3e6dc;
-    background-image: url('https://res.cloudinary.com/mikakallberg/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1656959952/dirt_sun_tndbjc.jpg');
+    background-image: url('https://res.cloudinary.com/mikakallberg/image/upload/v1657829007/CCBDF8FB-941E-4A25-ABDF-5EEE018D890F_1_105_c_uaujfv.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,6 +37,11 @@ p input{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
 
 .btn-signup {
@@ -88,7 +93,7 @@ a{
 
 .next, 
 .previous{
-    color: #b6c8b6;
+    color: #8ba78b;
     position: relative;
     display: block;
     padding: 1vh;
