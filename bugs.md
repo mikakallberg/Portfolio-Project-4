@@ -25,6 +25,7 @@
 - Large bug. update_post.html not redirecting to post_detail.html. Solution chaning the successful_url to a function form_valid under CommentUpdateView.
 - Bug when returning after deleting comment. Solution taking post.slug along from initial url and returning at as argument in a reverse_lazy.
 - Bug in carousel at post_detail.html. Typo was found in for loop. 
+- Bug while final deployment in Heroku. Error message 500 from deployed app-page. Setting Debug to True to get more info from Heroku error message.
 
 
 ### Unfixed bugs
