@@ -19,15 +19,58 @@
     - [Media](/credits.md)
 
 # Project Purpose
+(Taken from Assessment Handbook provided by Code Institute)
+#
+- Project purpose:
+  In this project, you'll build a Full-Stack site based on business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide role-based access to the site's data or other activities based on the dataset.
+#
 ## Learning Outcomes
-Taken from Assessment Handbook provided by Code Institute.
+- Use an Agile methodology to plan and design a Full-Stack Web application using an MVC framework and related contemporary technologies.
+- - [see User goals](#user-goals)
+- - [Checklist in deployment](/deployment.md)
+- Implement a data model, application features and business logic to manage, query and manipulate data to meet given needs in a particular real-world domain.
+- - [see Features](/features.md)
+- Identify and apply authorisation, authentication and permission features in a Full-Stack web application solution.
+- - [see Features](/features.md)
+- Create manual and/or automated tests for a Full-Stack Web application using an MVC framework and related contemporary technologies.
+- - [see Testing](/testing.md)
+- Use a distributed version control system and a repository hosting service to document, develop and maintain a Full-Stack Web application using an MVC framework and related contemporary technologies.
+- - [GitHub](https://github.com)
+- Deploy a Full-Stack Web application using an MVC framework and related contemporary technologies to a cloud-based platform.
+- - [Heroku](https://www.heroku.com/)
+- Understand and use object-based software concepts
+- - [see Features](/features.md)
 
 
-### Project requirements
-Taken from Assessment Handbook provided by Code Institute or derived therefrom.
-- Required langauge: [Python](https://www.python.org/doc/essays/blurb/) 
-- Using APIs and library software [Wikipedia](https://en.wikipedia.org/wiki/API)
-- Deploy to a cloud-based platform [Heroku](https://www.heroku.com/home)
+# Technologies and Libraries used
+
+### Languages used
+- [Django](https://www.djangoproject.com/) 
+
+- [HTML](https://www.w3schools.com/html/html_intro.asp)
+
+- [CSS](https://www.w3schools.com/css/css_intro.asp)
+
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+
+### Databases
+- [Postgresql](https://www.postgresql.org/)
+- - As database in Heroku
+- [SQLite](https://www.sqlite.org/index.html)
+- - As database for Gitpod, the initial thought was to use this for unittest.
+
+### Frameworks and tools
+- [Bootstrap](https://getbootstrap.com/)
+- [Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+- [Summernote](https://summernote.org/)
+- [Fontawesome](https://fontawesome.com/)
+- [Django-Crispyforms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- [Django-Copyright](https://pypi.org/project/django-copyright/)
+
+### Cloud storage and deployment services
+- [Cloudinary](https://cloudinary.com/)
+- [Heroku](https://www.heroku.com/)
+- [Gunicorn](https://gunicorn.org/)
 
 
 # Initial planning
@@ -49,26 +92,20 @@ Wireframe 1                                         | Wireframe 2
 
 # User Experience (UX)
 ## Demographics
+- People who want to know more about gardening and adjancent subject.
 
 ## User Goals
-
-
-
-# Technologies and Libraries used
-
-### Languages used
-- [Python](https://www.python.org/doc/essays/blurb/) 
-
-- [HTML](https://www.w3schools.com/html/html_intro.asp)
-
-- [CSS](https://www.w3schools.com/css/css_intro.asp)
-
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
-
-### APIs
-- https://pypi.org/project/django-copyright/
-- https://pypi.org/project/reportlab/
-
+#
+- As a Site User I can view a list of posts so that I can select one to read
+- As a Site User I can click on a post so that I can read the full text
+- As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral
+- As a Site User / Admin I can view comments on an individual post so that I can read the conversation
+- As a Site User I can register an account so that I can comment and like
+- As a Site User I can leave comments, edit and delete comments, on a post so that I can be involved in the conversation
+- As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
+- As a Site Admin I can create draft posts so that I can finish writing the content later
+- As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
+- As a Content Creator I can upload more then one image so that I can have multiple images in a carousel
 
 # Credits
 
