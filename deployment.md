@@ -45,11 +45,13 @@ The project is not deployed
                                - Successful deployment, unfortunately I forgot to take a screenshot of this. So no picture of the awesome rocket.
 ### Final Deployment:
 - For the final deployment I again follow the  videos in "I think therefore I blog walkthru"
+                - In GitPod:
                             - Before deployment I've done an intial testing of all features in preview.
                             - Settings -> Change DEBUG to False.
                             - Settings -> Add X_FRAME_OPTIONS = 'SAMEORIGIN'
                             - git add .
                             - git commit -m "Deployment commit"
                             - git push
-                            - 
+                - In Heroku:
+                            - Remove DISABLE_COLLECTSTATIC
                             - 
