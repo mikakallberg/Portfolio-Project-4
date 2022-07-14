@@ -47,9 +47,9 @@ The project is not deployed
 - For the final deployment I again follow the  videos in "I think therefore I blog walkthru"
                             - Before deployment I've done an intial testing of all features in preview.
                             - Settings -> Change DEBUG to False.
-                            - 
-                            - 
-                            - 
-                            - 
+                            - Settings -> Add X_FRAME_OPTIONS = 'SAMEORIGIN'
+                            - git add .
+                            - git commit -m "Deployment commit"
+                            - git push
                             - 
                             - 
