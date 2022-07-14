@@ -1,5 +1,22 @@
 # Credits
+#
+* [Back to README Home page](/README.md)
+#
+## Navigating Credits
+* [Blog Content credits](#blog-content-credits)
+   - [Why Soil Matters](#why-soil-matters)
+   - [How to grow tomatoes](#how-to-grow-tomatoes)
+   - [How to grow carrots](#how-to-grow-carrots)
+   - [The humble potatoe](#the-humble-potatoe)
+   - [The frail but worth it salad](#the-frail-but-worth-it-salad)
+   - [The hearty onion](#the-hearty-onion)
+   - [The plump Bell Pepper](#the-plump-bell-pepper)
 
+* [Image Credits](#image-credits)
+   - [About us picture](#about-us-picture)
+   - [Favicons](#favicons)
+   - [Creation Credits](#creation-credits)
+#
 ## Blog Content Credits
 - For content in BlogPosts the following sources where used. Credit is also made on each BlogPost under sources.
 
@@ -103,20 +120,20 @@
 #
 
 #
-#### About us picture
+### About us picture
 #
 [About page image](https://unsplash.com/photos/6ypOmTNK2FA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 #
 ![About image](/media/about_pic.jpg)
 
 #
-#### Favicons
+### Favicons
 #
 - For the favicon decorating the corner of ever title page. [Pixabay](https://pixabay.com/sv/vectors/v%c3%a4xter-mycket-liten-sprouty-gr%c3%b6n-576558/) was used to find a good image to then render into a appropiate format using the [Favicon converter](https://favicon.io/favicon-converter/).
 
 
 #
-## Creation Credits
+### Creation Credits
 #
 
 As part of the research and inspiration a number of different sources where used. From some of them entire code snippets have been used. These are credited in code and below.
@@ -126,3 +143,6 @@ As part of the research and inspiration a number of different sources where used
 
 
 
+#
+* [Back to README Home page](/README.md)
+#

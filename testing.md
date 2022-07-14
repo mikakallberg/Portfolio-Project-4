@@ -1,4 +1,12 @@
 # Testing
+#
+* [Back to README Home page](/README.md)
+#
+## Navigating Testing
+   - [Validator Testing](#validator-testing)
+   - [Manual testing](#manual-testing)
+   - [Automated Testing](#automated-testing)
+#
 ### Validator testing
 Validator testing!
 ### Manual Testing
@@ -15,3 +23,7 @@ Validator testing!
 ### Automated Testing
 - Continual testing done through the ------ method described in "The Clean Coder- A Code of Conduct for Professional Programmers" by Robert C. Martin and Hello Django lessons.
 ![TDD Testing example](Image goes here)
+
+#
+* [Back to README Home page](/README.md)
+#

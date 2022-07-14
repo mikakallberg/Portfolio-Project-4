@@ -1,6 +1,15 @@
-# Deployment
+# Deployment 
+[The Green Thumb](https://the-green-thumb.herokuapp.com/)
+#
+* [Back to README Home page](/README.md)
+#
 
-The project is not deployed
+### Code Plan
+
+Initial Plan page 1.                                 | Initial Plan page 2
+:--------------------------------------------------: | :--------------------------------------------------:
+![Initial Plan 1](image file link goes here)  | ![Initial Plan 2](image file link goes here)
+#
 ### Checklist:
 - to keep track of what to do and improvements on the initial plan, I use a checklist. Since this project isn't working, the list is incomplete.
 
@@ -65,3 +74,7 @@ The project is not deployed
                             - Remove DISABLE_COLLECTSTATIC
                             - Deploy manually
                             - Deployment syccessfull with all functionality and style.
+
+#
+* [Back to README Home page](/README.md)
+#

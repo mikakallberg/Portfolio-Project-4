@@ -1,4 +1,6 @@
-## Bugs
+# Bugs 
+* [Back to README Home page](/README.md)
+# 
 ### Bugs through the creation process
 - First bug was connected to trying to gifure out how to write automated tests. It took a lot of research and getting advice from programmers more advanced then me. But in the end I managed to create my very first succesfull automatic test. 
 ![Bug 1](media/bug_nr_one.png)
@@ -25,7 +27,7 @@
 - Large bug. update_post.html not redirecting to post_detail.html. Solution chaning the successful_url to a function form_valid under CommentUpdateView.
 - Bug when returning after deleting comment. Solution taking post.slug along from initial url and returning at as argument in a reverse_lazy.
 - Bug in carousel at post_detail.html. Typo was found in for loop. 
-- Bug while final deployment in Heroku. Error message 500 from deployed app-page. Setting Debug to True to get more info from Heroku error message.
+- Bug while final deployment in Heroku. Error message 500 from deployed app-page. Setting Debug to True to get more info from Heroku error message. Solution connecting to Heroku through terminal, the Multi-Factor Authentication might be why I can't deploy to Heroku according to walkthru.
 
 
 ### Unfixed bugs
@@ -33,3 +35,6 @@
 - 
 - 
 - 
+#
+*[Back to README Home page](/README.md)
+#
