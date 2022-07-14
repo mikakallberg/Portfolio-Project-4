@@ -12,7 +12,7 @@
 * [Deployment](/deployment.md)
 * [Credits](#credits)
     - [Mentoring](#mentoring)
-    - [Content](#content)
+    - [Content credits](#content-credits)
     - [Media](/credits.md)
 
 # Project Purpose
@@ -70,9 +70,11 @@ Taken from Assessment Handbook provided by Code Institute or derived therefrom.
 - [Daisy McGirr](https://github.com/Daisy-McG) for helping me and giving me insights into backend cooperation with frontend, helping me with some debugs and lessons around django.
 - [Bim Williams](https://github.com/MrBim) for being a good person to talk, and for supplying link to API to render content into a downloadable PDF.
 
-### Content
+### Content credits
 - This project is modelled and followed using the "I Think Therefore I Blog" [walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/), produced by Matt Rudge at Code Institute. Using this allowed me to focus on understanding the concepts instead of inventing the wheel with every line of code I produce.
 - Another source used in this project is [Djanogcentral](https://djangocentral.com/building-a-blog-application-with-django/). Wherever code from this walkthrough is used, there is credit given in that file.
+- To upload multiple images I took a lot of inspiration from a content creator on Youtube called [The Pylot](https://www.youtube.com/watch?v=-0nYBqY9i5w), my code is not a copy paste of his, but I used his video as a stepping stone to get functionality for my Carousels. I also used docs from [Cloudinary](https://cloudinary.com/documentation/django_image_and_video_upload).
+- For the alt_tags a line of code from a question on [StackOverflow](https://stackoverflow.com/questions/65415221/best-method-to-store-alt-tags-in-django) was used.
 
 ### Media
 - For how to make the README nav-bar https://github.com/artkonekt/menu/blob/master/README.md was used.

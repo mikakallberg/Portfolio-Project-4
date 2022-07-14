@@ -123,6 +123,7 @@
 ### About us picture
 #
 [About page image](https://unsplash.com/photos/6ypOmTNK2FA?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+- The about page text is original content.
 #
 ![About image](/media/about_pic.jpg)
 
@@ -131,13 +132,31 @@
 #
 - For the favicon decorating the corner of ever title page. [Pixabay](https://pixabay.com/sv/vectors/v%c3%a4xter-mycket-liten-sprouty-gr%c3%b6n-576558/) was used to find a good image to then render into a appropiate format using the [Favicon converter](https://favicon.io/favicon-converter/).
 
+![image](/media/favicon.png)
+
 
 #
 ### Creation Credits
 #
 
-As part of the research and inspiration a number of different sources where used. From some of them entire code snippets have been used. These are credited in code and below.
+As part of the research and inspiration for this project, a number of different sources where used. 
+From some of them entire code snippets have been used. These are credited in code and below.
 
+#### Epic Gardening
+- [Epic Gardening](https://www.epicgardening.com/best-gardening-blogs-and-websites/) is a gardening website
+  that as an article on the 59 best gardening blogs. [Florette Flowers](https://www.floretflowers.com/dahlia-breeding-update/) which was featured among the 59 best blogs was really beautiful.
+
+#### Florette Flowers
+- When looking for a color palette both for colors and pictures, this [site was kept in mind](https://www.floretflowers.com/dahlia-breeding-update/).
+#
+![Home page](/media/florette.png)
+#
+#### From Djangocentral
+- Their [blog walkthru](https://djangocentral.com/building-a-blog-application-with-django/) was used to study and understand how to build functionality. 
+  Their sidabar widget was used in sidebar.html with connected backend functionality to add the widget into homepage and blogpost pages.
+
+#### Color Platte
+- For the color palette [IColorpalette](https://icolorpalette.com/imagepalette/flower_pink_garden_roses-12) was used as inspiration and [W3schools](https://www.w3schools.com/colors/colors_picker.asp) color picker was used to find the exact right shade that would look good.
 
 
 
