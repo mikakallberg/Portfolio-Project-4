@@ -72,7 +72,8 @@
     - In Heroku:
         - Remove DISABLE_COLLECTSTATIC
         - Deploy manually
-        - Deployment syccessfull with all functionality and style.
+        - Deployment successfull with all functionality and style.
+        - set future deploys to automatic.
 
 #
 * [Back to README Home page](/README.md)
