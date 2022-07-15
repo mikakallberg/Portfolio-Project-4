@@ -22,7 +22,9 @@
 - When the user is logged in they can access their particular functions.
 - -Admin can reach admin view thru the url window, on top of all functionality a regular user can access.
 - - a regular site user can access the logout page, creating comments/editing/deleting comments and likin and unliking posts.
-- - when a user logs in or out a message displays at the top of the page for three seconds to indicate the users action was successfull. This is du to a combination of backend fucnctions in the apps code, Bootstrap messages and JavaScript, and some custome JavaScript code written at the bottom of the base.html page.
+- - when a user logs in or out a message displays at the top of the page for three seconds to indicate the users action was successfull. This is du to a combination of backend functions in the apps code, Bootstrap messages and JavaScript, and some custome JavaScript code written at the bottom of the base.html page.
+- The responsiveness of all pages has been ensured on mulitple screen sizes.
+#
 #### Blogpost page
 #
 ![Shows slide](/media/shows_slide.jpeg)                 | ![Comment approval](/media/comment_approval.jpeg)
@@ -33,7 +35,7 @@
 - But in order to interact the visitor has to register or log in.
 - When this is done more features are accessable to the site user. Liking and unliking a post, commenting on a post.
 - Backend wise the comment is rendered through a crispy form in forms.py and the model for the form is rendered from models.py.
-- And after the comment is approved the user that left the comment have access to editing and deleting their comment.
+- After the comment is approved the user that left the comment have access to editing and deleting their comment.
 - the comment along with all other content created through the UI- and Admin-view, is saved and rendered from the postgres database.
 #
 #### About page
@@ -52,13 +54,13 @@
 #
 ![Sign out](/media/signout_page_big.jpeg) | ![Sign out message](/media/signin_msg.jpeg)
 #
-- The login page is also from allauth.
+- The login page is also from allauth. And the information is modeled from a comment model in models.py
 #
 #### Logout page
 #
 ![Sign out](/media/signout_page_big.jpeg) | ![Sign out message](/media/signin_msg.jpeg)
 #
-- The logout page is an allauth page
+- The logout page is an allauth page. And the information is modeled from a comment model in models.py
 #
 #### Edit Comment page
 #
@@ -88,6 +90,8 @@
 #
 - On external links there are _blank target tags which open a new page for the user, in order for neffarious actors to nog be able to hight jack that request each link as a noopener and norefferrer tag.
 - to ensure hackers don't get to potentially sensitive data a CSRF token is placed when an authentication feature is present.
+- To ensure only the person who has left a comment is the one who has access to edit or delete, the appearance of symbols for edit and delete only do soo if the requested user equals equals the account that laft the comment.
+- If a user of admin needs to delete their account all instances of that persons activity gets deleted through a cascade statement in models.py. Same goes for deleting blogposts.
 #
 
 ### Features left to implement
