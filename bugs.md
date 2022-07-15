@@ -35,6 +35,7 @@
 
 
 ### Unfixed bugs
+- A style bug appear when copy pasting text from internet resources. Every effort that time lended was given, but given more time that bug could have been solved.
 - From information from Tutor support pylint error are from Pyhton not being able to recognize django code properly, so all pylint bugs are left.
 #### Blog-folder
 - admin.py
