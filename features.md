@@ -45,19 +45,19 @@
 #
 #### Register page
 #
-![Register](/media/signout_page_big.jpeg)                 | ![Register message](/media/signin_msg.jpeg)
+![Register](/media/signout_page_big.jpeg) | ![Register message](/media/signin_msg.jpeg)
 #
 - When registering for this site a user is presented with an allauth form page. That connects to a comment model in models.py, and the information is stored in postgres database.
 #
 #### Login page
 #
-![Sign out](/media/signout_page_big.jpeg)                 | ![Sign out message](/media/signin_msg.jpeg)
+![Sign out](/media/signout_page_big.jpeg) | ![Sign out message](/media/signin_msg.jpeg)
 #
 - The login page is also from allauth.
 #
 #### Logout page
 #
-![Sign out](/media/signout_page_big.jpeg)                 | ![Sign out message](/media/signin_msg.jpeg)
+![Sign out](/media/signout_page_big.jpeg) | ![Sign out message](/media/signin_msg.jpeg)
 #
 - The logout page is an allauth page
 #
