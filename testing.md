@@ -60,7 +60,7 @@
 - Ensured site users cannot edit or delete other site users comments or likes.
 - Ensured all functionality works in both desktop and mobile as intented.
 #
-
+![Error message when user tries to reach admin page](/media/error_msg_user.jpeg)
 #
 
 ### Automated Testing
