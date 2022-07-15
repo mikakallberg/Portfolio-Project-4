@@ -41,22 +41,22 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}" aria-label="home page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About Us</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'about' %}" aria-label="about page">About Us</a>
                     </li>
 
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link" href="{% url 'account_logout' %}" aria-label="logout">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+                        <a class="nav-link" href="{% url 'account_signup' %}" aria-label="register">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link" href="{% url 'account_login' %}" aria-label="login">Login</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -90,10 +90,10 @@
                     <p class="copyright text-center">Copyright &copy; The Green Thumb {% load copyrighttags %}{% getCopyrightYears %} <span id="copyright"></span></p>
                     <p class="social">Follow us:</p>
                     <p class="social social-links "> 
-                        <a href="https://sv-se.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook ms-3 social-link-facebook"></i></a>
-                        <a href="https://twitter.com/?lang=sv" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter ms-3 social-link-twitter"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram ms-3 social-link-instagram"></i></a>
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube ms-3 social-link-youtube"></i></a>
+                        <a href="https://sv-se.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="facebook"><i class="fa-brands fa-facebook ms-3 social-link-facebook"></i></a>
+                        <a href="https://twitter.com/?lang=sv" target="_blank" rel="noopener noreferrer" aria-label="twitter"><i class="fa-brands fa-twitter ms-3 social-link-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="instagram"><i class="fa-brands fa-instagram ms-3 social-link-instagram"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="youtube"><i class="fa-brands fa-youtube ms-3 social-link-youtube"></i></a>
                     </p>
     </footer>
 
