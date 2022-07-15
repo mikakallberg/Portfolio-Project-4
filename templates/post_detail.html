@@ -65,13 +65,13 @@
                         <!-- The number of likes goes before the closing strong tag -->
                         <strong>
                             {% if user.is_authenticated %}
-                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST" aria-label="Like the post">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like" aria-label="Unlike post"><i
                                         class="fas fa-heart"></i></button>
                                 {% else %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like" aria-label="A like button"><i
                                         class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
@@ -118,8 +118,8 @@
                     <!-- The body of the comment -->
                     {% if request.user == comment.name %}
                     {{ comment.body | linebreaks }}
-                    <a href="{% url 'update_comment' comment.pk %}"><i class="fa-solid fa-file-pen"></i></a>
-                    <a href="{% url 'delete_comment' post.slug comment.pk %}"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="{% url 'update_comment' comment.pk %}" aria-label="To edit your comment presss here"><i class="fa-solid fa-file-pen"></i></a>
+                    <a href="{% url 'delete_comment' post.slug comment.pk %}" aria-label="To delete your comment press here"><i class="fa-solid fa-trash-can"></i></a>
                     {% else %}
                     {{ comment.body | linebreaks }}
                     {% endif %}
@@ -142,7 +142,7 @@
                 <form method="post" style="margin-top: 1.3em;">
                     {{ form | crispy }}
                     {% csrf_token %}
-                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                    <button type="submit" class="btn btn-signup btn-lg" aria-label="To comment presss here">Submit</button>
                 </form>
                 {% endif %}
                 {% endif %}
