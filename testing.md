@@ -25,8 +25,9 @@
    :--------------------------------------------------: | :--------------------------------------------------:
    ![Desktop](/media/lighthouse_desktop.jpeg)          | ![Mobile](/media/lighthouse_mobile.jpeg)
 #
-
-
+### Am I Responsive
+#
+![Am I Responsive](/media/amiresponsive.png)
 
 ### Manual Testing
 #### Checklist for manual testing
