@@ -83,6 +83,13 @@
 - Here django functionality ensures communication with databases, frameworks, tools and cloudbased services.
 - The look and functionality is created in models.py, rendering the view is handled in views.py. 
 
+#
+#### Security
+#
+- On external links there are _blank target tags which open a new page for the user, in order for neffarious actors to nog be able to hight jack that request each link as a noopener and norefferrer tag.
+- to ensure hackers don't get to potentially sensitive data a CSRF token is placed when an authentication feature is present.
+#
+
 ### Features left to implement
 - Open up possibility for more content creators, and with that being able to search for thier contributions via user_email, as well as title and/or content of post.
 - Rendering a blog post content into a downloadable PDF
