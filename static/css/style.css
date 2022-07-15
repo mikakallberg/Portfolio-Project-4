@@ -165,6 +165,11 @@ a{
     opacity: 0.4;
 }
 
+/*About page*/
+.pre_text{
+    text-align: center;
+}
+
 /* login.html, signup.html, logout.html */
 
 .login-input input{
