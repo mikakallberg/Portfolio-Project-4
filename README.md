@@ -1,6 +1,6 @@
 # The Green Thumb
 
-![Header](/media/Header_for_readme.png)
+![Am I Responsive](/media/amiresponsive.png)
 ## Navigation Through Content
 #
 * [Deployed page](https://the-green-thumb.herokuapp.com/)
