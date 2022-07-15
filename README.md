@@ -1,6 +1,7 @@
 # The Green Thumb
 
-# Navigation Through Content
+## Navigation Through Content
+#
 * [Deployed page](https://the-green-thumb.herokuapp.com/)
 * [Project Purpose](#project-purpose)
     - [Learning Outcomes](#learning-outcomes)
@@ -18,7 +19,8 @@
     - [Content credits](#content-credits)
     - [Media](/credits.md)
 
-# Project Purpose
+## Project Purpose
+#
 (Taken from Assessment Handbook provided by Code Institute)
 #
 - Project purpose:
@@ -41,8 +43,8 @@
 - Understand and use object-based software concepts
 - - [see Features](/features.md)
 
-
-# Technologies and Libraries used
+#
+## Technologies and Libraries used
 
 ### Languages used
 - [Django](https://www.djangoproject.com/) 
@@ -75,7 +77,8 @@
 - [Gunicorn](https://gunicorn.org/)
 
 
-# Initial planning
+## Initial planning
+#
 ### Initial plan
 - In the intial meeting there was three ideas. Recipe website, Garden blog and Car Dealship. Two rough wireframes where created.
 #
@@ -92,7 +95,8 @@ Wireframe 1                                         | Wireframe 2
  ![Rough sketch of Garden blog](/media/front_page.png)|  ![Rough sketch of blogpost page](/media/post_page.png)
 #
 
-# User Experience (UX)
+## User Experience (UX)
+#
 ## Demographics
 - People who want to know more about gardening and adjancent subject.
 
@@ -109,8 +113,8 @@ Wireframe 1                                         | Wireframe 2
 - As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
 - As a Content Creator I can upload more then one image so that I can have multiple images in a carousel
 
-# Credits
-
+## Credits
+#
 ## Thank you
 - [Spencer Barriball](https://github.com/5pence) for always being there and being a fantastic mentor.
 - [Daisy McGirr](https://github.com/Daisy-McG) for helping me and giving me insights into backend cooperation with frontend, helping me with some debugs and lessons around django.

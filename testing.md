@@ -1,5 +1,4 @@
 # Testing
-#
 * [Back to README Home page](/README.md)
 #
 ## Navigating Testing
@@ -22,9 +21,9 @@
 
 ### Lighthouse testing
 #
- #### Desktop                                        | Mobile
-:--------------------------------------------------: | :--------------------------------------------------:
-![Desktop](/media/lighthouse_desktop.jpeg)           | ![Mobile](/media/lighthouse_mobile.jpeg)
+   Desktop                                             | Mobile
+   :--------------------------------------------------: | :--------------------------------------------------:
+   ![Desktop](/media/lighthouse_desktop.jpeg)          | ![Mobile](/media/lighthouse_mobile.jpeg)
 #
 
 

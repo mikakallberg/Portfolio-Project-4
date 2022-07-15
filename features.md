@@ -1,5 +1,4 @@
 # Blog Content
-#
 * [Back to README Home page](/README.md)
 ## Navigating Features
 * [Features](#features)

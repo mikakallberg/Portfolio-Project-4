@@ -3,8 +3,6 @@
 #
 * [Back to README Home page](/README.md)
 #
-
-#
 ### Checklist:
 - to keep track of what to do and improvements on the initial plan, I use a checklist.
 #
