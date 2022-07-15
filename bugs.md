@@ -28,7 +28,10 @@
 - Bug when returning after deleting comment. Solution taking post.slug along from initial url and returning at as argument in a reverse_lazy.
 - Bug in carousel at post_detail.html. Typo was found in for loop. 
 - Bug while final deployment in Heroku. Error message 500 from deployed app-page. Setting Debug to True to get more info from Heroku error message. Solution connecting to Heroku through terminal, the Multi-Factor Authentication might be why I can't deploy to Heroku according to walkthru.
-- Bug while doing Lighthouse testing, background-image doesn't show. 
+- Bug while optimizing Lighthouse result, background-image doesn't show. Somewhere in the background it changed to a Gif-fil. Solution download new copy and upload to Cloudinary, produce new link and copy paste into style.css. After 15 min, bug resolved.
+#
+![Image bug while optimizing lighthouse](/media/background_img_error.jpeg)
+#
 
 
 ### Unfixed bugs
