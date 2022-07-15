@@ -58,6 +58,7 @@
 - Ensured site users cannot access logour page without being logged in to account.
 - Ensured site users cannot edit or delete other site users comments or likes.
 - Ensured all functionality works in both desktop and mobile as intented.
+- Ensured automatic deployment functionality.
 #
 ![Error message when user tries to reach admin page](/media/error_msg_user.jpeg)
 #
